@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/santoshgajurel_ysj/ontologies/2024/11/untitled-ontology-8"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/santoshgajurel_ysj/ontologies/2024/11/untitled-ontology-8">
+    <Prefix name="" IRI="http://www.semanticweb.org/santoshgajurel_ysj/ontologies/2024/11/untitled-ontology-8/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#circle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#rectangle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#shape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#square"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#triangle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBase"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHeight"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRadius"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSideLength"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/santoshgajurel_ysj/ontologies/2024/11/untitled-ontology-7#base"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/santoshgajurel_ysj/ontologies/2024/11/untitled-ontology-7#breadth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/santoshgajurel_ysj/ontologies/2024/11/untitled-ontology-7#radius"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/santoshgajurel_ysj/ontologies/2024/11/untitled-ontology-7#height"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/santoshgajurel_ysj/ontologies/2024/11/untitled-ontology-7#length"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/santoshgajurel_ysj/ontologies/2024/11/untitled-ontology-7#base"/>
+        <Class IRI="#triangle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/santoshgajurel_ysj/ontologies/2024/11/untitled-ontology-7#breadth"/>
+        <Class IRI="#rectangle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/santoshgajurel_ysj/ontologies/2024/11/untitled-ontology-7#height"/>
+        <Class IRI="#triangle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/santoshgajurel_ysj/ontologies/2024/11/untitled-ontology-7#length"/>
+        <Class IRI="#rectangle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/santoshgajurel_ysj/ontologies/2024/11/untitled-ontology-7#length"/>
+        <Class IRI="#square"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/santoshgajurel_ysj/ontologies/2024/11/untitled-ontology-7#radius"/>
+        <Class IRI="#circle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#circle"/>
+        <Class IRI="#shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#rectangle"/>
+        <Class IRI="#shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#square"/>
+        <Class IRI="#shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#triangle"/>
+        <Class IRI="#shape"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/santoshgajurel_ysj/ontologies/2024/11/untitled-ontology-7#base"/>
+        <Class IRI="http://www.semanticweb.org/santoshgajurel_ysj/ontologies/2024/11/untitled-ontology-7#height"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/santoshgajurel_ysj/ontologies/2024/11/untitled-ontology-7#breadth"/>
+        <Class IRI="http://www.semanticweb.org/santoshgajurel_ysj/ontologies/2024/11/untitled-ontology-7#length"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#circle"/>
+        <Class IRI="#rectangle"/>
+        <Class IRI="#square"/>
+        <Class IRI="#triangle"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBase"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasHeight"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRadius"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSideLength"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBase"/>
+        <Class IRI="#triangle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasHeight"/>
+        <Class IRI="#triangle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRadius"/>
+        <Class IRI="#circle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSideLength"/>
+        <Class IRI="#rectangle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSideLength"/>
+        <Class IRI="#square"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBase"/>
+        <Class IRI="http://www.semanticweb.org/santoshgajurel_ysj/ontologies/2024/11/untitled-ontology-7#base"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasHeight"/>
+        <Class IRI="http://www.semanticweb.org/santoshgajurel_ysj/ontologies/2024/11/untitled-ontology-7#height"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRadius"/>
+        <Class IRI="http://www.semanticweb.org/santoshgajurel_ysj/ontologies/2024/11/untitled-ontology-7#radius"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSideLength"/>
+        <Class IRI="http://www.semanticweb.org/santoshgajurel_ysj/ontologies/2024/11/untitled-ontology-7#length"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
